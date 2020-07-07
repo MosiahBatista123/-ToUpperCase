@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!---Titulo da aba-->	<title>UpperCase Project</title>
+
+</head>
+
+<body>
+
+<!---Titulo do site--><center><h1>UpperCase Project</h1></center>
+
+<!---Espaço--><br>
+
+<!---Centralizar o site--><center>
+
+<!---Formulario--> <form id="formulario">
+
+	<!---Local onde o úsuario vai escrever o texto--><textarea placeholder="Digite o seu texto aqui..." type="text" id="campo" ></textarea>
+  <!---Espaço--><br><br>
+
+<!---Botão enviar--><input type="submit" value="Enviar">
+
+<!---Fim do Formúlario--></form>
+
+<!---Espaço--><br><br>
+
+<!---Desing do site CSS-->
+<style type="text/css">
+
+/* Mudar a fonte do texto */
+	body{
+
+		font-family: Arial;
+	}
+
+/* Aumentando o tamanho do texto */
+input [type=text] {
+height: 250px;
+}
+
+</style>
+
+<!---Funcionalidade do site | Javascript-->
+<script type="text/javascript">
+	
+//Criando um local para armazenar os dados do úsuario
+var form = document.getElementById('formulario');
+var campo = document.getElementById('campo');
+
+//Enviar os dados do úsario para as variaveis
+form.addEventListener('submit', function(e) {
+
+ //Criar um alerta e deixar o texto em minúsculo
+    alert(campo.value.toLowerCase());   
+});
+
+</script>
+
+<!---Não esqueça de seguir O jovem programador nas redes sociais: @mosiahbatista_-->
+
+</body>
+</html>
